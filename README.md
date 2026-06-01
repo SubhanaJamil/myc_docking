@@ -1,5 +1,5 @@
 
-<h1>MYC Gene: Integrated Bioinformatics Analysis, Structural Validation, and Molecular Docking Pipeline</h1>
+<h1>MYC Gene Integrated Bioinformatics Analysis, Structural Validation, and Molecular Docking Pipeline</h1>
 
 <div class="box">
 <h2>Abstract</h2>
