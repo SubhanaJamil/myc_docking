@@ -499,17 +499,3 @@ https://colab.research.google.com/drive/1q-KWXehftshvs-PxKH6U2TFFzaTLMI5G#scroll
 </table>
 
 </div>
-<div class="box">
-<h2>References</h2>
-<ul>
-<li>Biopython Documentation</li>
-<li>NCBI</li>
-<li>AlphaFold</li>
-<li>PubChem</li>
-<li>GNINA</li>
-<li>Py3Dmol</li>
-</ul>
-</div>
-
-</body>
-</html>
