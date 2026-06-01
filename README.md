@@ -223,6 +223,43 @@ view.show()
  <img width="896" height="442" alt="image" src="https://github.com/user-attachments/assets/01112c09-513d-49eb-8541-8937a5246d3c" />
  <p>For 3D visualization Click this link</p> 
  https://colab.research.google.com/drive/1q-KWXehftshvs-PxKH6U2TFFzaTLMI5G#scrollTo=SgdUlcEgsunS&fullscreenOutput=true
+<h2>MYC AlphaFold Structure Confidence (pLDDT Analysis)</h2>
+<pre>from Bio.PDB import PDBParser
+import matplotlib.pyplot as plt
+import os
+
+parser = PDBParser(QUIET=True)
+structure = parser.get_structure("AF_MYC", os.path.join(project_folder, "MYC_alphafold.pdb"))
+
+plddt = []
+
+for model in structure:
+    for chain in model:
+        for residue in chain:
+            if "CA" in residue:
+                plddt.append(residue["CA"].get_bfactor())
+
+plt.figure(figsize=(12,4))
+plt.plot(plddt, linewidth=1)
+
+plt.axhline(90, linestyle="--", label="Very high confidence")
+plt.axhline(70, linestyle="--", label="Confident")
+plt.axhline(50, linestyle="--", label="Low confidence")
+
+plt.title("MYC AlphaFold pLDDT Confidence Score")
+plt.xlabel("Residue Index")
+plt.ylabel("pLDDT Score")
+plt.legend()
+plt.tight_layout()
+plt.show()</pre>
+<p>
+The pLDDT (predicted Local Distance Difference Test) score was extracted from the AlphaFold-predicted MYC protein structure.
+It provides residue-level confidence in structural prediction accuracy.
+Higher values indicate stronger model reliability, while lower values suggest flexible or uncertain regions.
+This analysis helps evaluate structural stability before molecular docking.
+The MYC structure shows a mix of highly confident folded domains and flexible terminal regions.
+
+<img width="1189" height="390" alt="plddt plot" src="https://github.com/user-attachments/assets/537152be-ad39-4be3-9398-2c9bf4ad3790" />
 
 <!-- 11 -->
 <div class="box">
