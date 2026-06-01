@@ -2,8 +2,14 @@
 <h1>MYC Gene Integrated Bioinformatics Analysis, Structural Validation, and Molecular Docking Pipeline</h1>
 
 <div class="box">
-<h2>Abstract</h2>
-<p>The MYC proto-oncogene is a master regulator of cell growth, proliferation, apoptosis, and metabolism. Dysregulation of MYC is strongly associated with multiple human cancers, making it a critical target in oncology and drug discovery research. In this study, a complete in-silico bioinformatics pipeline was developed to analyze the MYC gene from sequence retrieval to molecular docking analysis. The workflow integrates nucleotide sequence extraction from NCBI, transcription into mRNA, translation into protein, sequence validation using BLAST, structural analysis using AlphaFold prediction, and molecular docking using GNINA. Additionally, ligand interaction analysis was performed using a PubChem-derived small molecule, and protein–ligand binding affinity was evaluated computationally. This project demonstrates how modern bioinformatics tools can be combined to simulate a complete drug discovery pipeline without wet-lab experiments.</p>
+<h2>Overview</h2>
+<p>The MYC gene (c-MYC) is a well-known proto-oncogene that plays a central role in regulating cell proliferation, metabolism, apoptosis, and differentiation. It encodes a transcription factor that binds DNA and controls the expression of multiple downstream genes involved in cell cycle progression.
+
+Aberrant activation or overexpression of MYC is strongly associated with many human cancers, including Burkitt lymphoma, breast cancer, lung cancer, and leukemia. Because of its critical role in tumor biology, MYC is considered one of the most important therapeutic targets in cancer research.
+
+In this project, a complete computational bioinformatics workflow was developed to analyze the MYC gene starting from nucleotide sequence retrieval to protein structure analysis and ligand docking. The pipeline integrates sequence processing, BLAST validation, structural comparison, and molecular docking using modern computational tools.
+
+This study demonstrates how in-silico techniques can be used to explore gene function and protein-ligand interactions without laboratory experiments.</p>
 </div>
 
 <div class="box" align="center">
@@ -48,7 +54,7 @@
 
 <div class="box">
 <h2>Software and Tools Used</h2>
-
+<p>All analyses were performed using Python-based bioinformatics tools integrated within a Jupyter Notebook environment.</p>
 <table>
 <tr><th>Tool</th><th>Description</th><th>Purpose</th></tr>
 <tr><td>Biopython</td><td>Bioinformatics library</td><td>Sequence retrieval, transcription, translation, BLAST</td></tr>
